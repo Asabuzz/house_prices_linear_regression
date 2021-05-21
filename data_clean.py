@@ -21,7 +21,7 @@ def drop_duplicates():
 
 def save_new_df():
     df1 = drop_duplicates()
-    df1.to_csv('house_prices_clean.csv')
+    df1.to_csv('house_prices_clean.csv', index=False)
 
 
 def read_new_df():
