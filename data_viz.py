@@ -10,8 +10,7 @@ df_clean =  read_new_df()
 
 def df_infos():
     describe = df_clean.describe()
-    median = df_clean.median()
-    return describe, median
+    return describe
 
 
 def plot_variables():  
