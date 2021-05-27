@@ -16,8 +16,8 @@ def sklearn_lr():
     X = df_clean[['GrLivArea']]
     y = df_clean[['SalePrice']]
     model = LinearRegression()
-    model_fit = model.fit(X, y) # entrainement du modele
-    return model.score(X, y), model_fit # évaluation avec le coefficient de corrélation
+    model_fit = model.fit(X, y) 
+    return model.score(X, y), model_fit
 
 def sklearn_pred(p2):
     a, model_fit = sklearn_lr()
